@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">JustChat</string>
     <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="result" />
 </resources>

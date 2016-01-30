@@ -7,9 +7,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:name="com.orm.SugarApp">
+        <meta-data android:name="DATABASE" android:value="justchat.db" />
+        <meta-data android:name="VERSION" android:value="20" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />>
         <activity
-            android:name=".ActivityLogin"
+            android:name=".com.activity.justchat.ActivityLogin"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -20,7 +24,17 @@
         </activity>
 
         <activity
-            android:name=".ActivityContent"
+            android:name=".com.activity.justchat.ActivityContent"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".com.activity.justchat.ActivityRegister"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

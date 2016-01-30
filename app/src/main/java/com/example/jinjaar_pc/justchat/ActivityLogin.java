@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class ActivityLogin extends Activity {
@@ -22,10 +23,8 @@ public class ActivityLogin extends Activity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText username = (EditText) findViewById(R.id.inputField);
-                String userNameText = username.getText().toString();
-                Intent intent = new Intent(ActivityLogin.this,ActivityContent.class);
-                intent.putExtra("username",userNameText );
+
+                Intent intent = new Intent(ActivityLogin.this, ActivityContent.class);
                 startActivity(intent);
             }
         });

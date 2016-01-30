@@ -4,4 +4,5 @@
     <string name="username">Username</string>
     <string name="login">Login</string>
     <string name="result" />
+    <string name="hello_world">hello</string>
 </resources>
